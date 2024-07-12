@@ -8,7 +8,7 @@ export default function mouthLaugh (): SVGElement {
         width: "50%",
         height: "19%",
         position: "absolute",
-        top: "23%",
+        top: "24%",
         right: "23%"
       }}
       width="73"

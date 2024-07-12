@@ -1,0 +1,48 @@
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.SectionWrapper:hover + .DropdownOptions {
+  display: flex;
+}
+
+.DropdownOptions {
+  //display: none;
+  background: rgba(255, 255, 255, 0.1);
+
+  & > div {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  // align-items: center;
+  // justify-content: start;
+  // position: absolute;
+  .optionWrapper:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+    &:after {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  // .childrenWrapper > svg {
+  //   top: auto !important;
+  //   right: auto !important;
+  //   bottom: auto !important;
+  //   left: auto !important;
+  //   width: 100% !important;
+  //   height: 100% !important;
+  // }
+}

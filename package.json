@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "scripts": {},
+  "scripts": {
+    "dev": "npx webpack-dev-server --config ./webpack/demo.js --progress"
+  },
   "keywords": [
     "react",
     "avatar",
